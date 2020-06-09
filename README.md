@@ -1,8 +1,6 @@
 # Company-Email-Network-Analysis
 
-A company's email network is analyzed to predict whether an employee, based on their attributes, is receiving management level salary. 
-The communication each employee has with one another is also analyzed. In NetworkX, each node is an employee, and each edge indicaties that at least one email has
-been sent between the two people. The node attributes are Department and ManagementSalary (the target variable). 
+A company's email network is analyzed to predict whether an employee, based on their attributes, is receiving a manager's salary. The communication each employee has with one another is also analyzed. In NetworkX, each node is an employee, and each edge indicaties that at least one email has been sent between the two people. The node attributes are Department and ManagementSalary (the target variable). 
 
 Some feature engineering is performed, mostly in NetworkX, to determine important indicative factors of the salary received. The department data was found to detract from the AUC score, even
 after one-hot encoding. The nodal clustering, degree, closeness centrality, and HITS scores are added to improve the AUC score from a baseline of ~0.5 to 0.93. Among these, the most important are clustering and closeness centrality. 
